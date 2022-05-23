@@ -19,6 +19,13 @@ html{
     margin: 0 auto;
 }
 
+
+section{
+    padding: 100px 0;
+    color: #555;
+    
+}
+
 /* ------------------- */
 /*    HEADINGS        */
 /* ----------------- */
@@ -29,6 +36,51 @@ h1{
     font-size: 300%;
     font-weight: 200;
 }
+
+h2{
+    font-size: 180%;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h2::after{
+    display: block;
+    content: '';
+    height: 2px;
+    width: 100px;
+   background-color: #f4f400;
+   margin: 40px auto;
+}
+h3{
+    font-size: 110%;
+   font-weight: 300;
+   margin-bottom: 15px;
+
+}
+
+/* ------------------- */
+/*    PARAGRAPHS      */
+/* ----------------- */
+
+.text{
+
+line-height: 145%;
+text-align: center;
+width: 800px;
+margin: 0 auto 50px auto;
+
+
+
+}
+.card p{
+    font-size: 90%;
+    line-height: 1.5;
+    width: 90%;
+    font-weight: 200;
+}
+
+
 
 /* ------------------- */
 /*    BUTTONS         */
@@ -118,4 +170,25 @@ margin-top: 30px;
 }
 .main-nav li a:hover{
     border-bottom: 2px solid #f4f400;
+}
+
+
+/* ------------------- */
+/*      SECTION       */
+/* ----------------- */
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+.card{
+    width: 21%;
+}
+.card ion-icon{
+    width: 50px;
+    height: 50px;
+    color: #f4f400;
+    margin-bottom: 15px;
 }
